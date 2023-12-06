@@ -1,4 +1,4 @@
-# Agendamento: Projeto de agendamento de vistoria(bootstrap)
+# Agendamento: Projeto de agendamento de vistoria
 
 ## Acesse: 
 
