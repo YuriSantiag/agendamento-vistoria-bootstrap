@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento de Vistoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+    </nav>
+    <main class="container mt-3 ms-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="pt-3">Agendamento de Vistoria</h2>
+          <p class="pt-4">
+            Nos próximos dias estaremos realizando as vistorias para o
+            empreendimento <strong>PARK</strong>.
+          </p>
+          <p class="pt-4">
+            Confira os passos abaixo para solicitar sua visita:
+          </p>
+          <ul class="pt-4 ms-n1">
+            <li><i class="bi bi-clock fs-4"></i> Agende um horário.</li>
+            <li>
+              <i class="bi bi-keyboard fs-4"></i>
+              Para escolher o horário de agendamento, entre com o CPF ou CNPJ do
+              proprietário do apartamento no campo reservado abaixo e clique em
+              "Agendar".
+            </li>
+            <li>
+              <i class="bi bi-calendar4 fs-4"></i>
+              Na próxima tela será exibido os horários disponíveis para que você
+              realize o agendamento.
+            </li>
+          </ul>
+        </div>
+        <div class="calendarBox col-sm-6 mt-2">
+          <h6 class="d-flex justify-content-center pt-5">
+            Digite seu CPF para prosseguir com Agendamento
+          </h6>
+          <div id="date" class="d-flex justify-content-center"></div>
+          <div id="alertMessage"></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <label for="inputCPF" class="form-label">CPF:</label>
+        <input
+          type="text"
+          placeholder="000.000.000-00"
+          id="inputCPF"
+          class="form-control"
+          required
+        />
+        <button type="button" id="schedule" class="btn btnA btn-dark mt-2">
+          Agendar
+        </button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        var $cpfMask = $("#inputCPF");
+        $cpfMask.mask("000.000.000-00", { reverse: true });
+      });
+    </script>
+  </body>
+</html>

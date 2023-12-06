@@ -1,0 +1,64 @@
+body {
+  background-image: url(/img/BG-Branco\ 1.png);
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif, "Montserrat";
+}
+
+h2 {
+  font-family: "Poppins", sans-serif, "Montserrat";
+  font-weight: 600 !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (min-width: 1204px) {
+  .btnA {
+    margin-left: 18rem;
+  }
+}
+
+.btn-dark {
+  background-color: orangered !important;
+  border: none !important;
+  border-radius: 10rem !important;
+}
+
+.btn-dark:hover {
+  scale: 1.1;
+}
+
+.bi-clock,
+.bi-keyboard,
+.bi-calendar4 {
+  color: orangered;
+}
+
+.calendarBox {
+  background-color: white;
+  border-radius: 2rem;
+  border: 1rem;
+  box-shadow: 5px 5px 5px 2px rgba(175, 171, 171, 0.374);
+}
+
+.ms-n1 {
+  margin-left: -2rem !important;
+}
+
+input {
+  box-shadow: none !important;
+}
+
+input[type="text"]:focus {
+  border-color: orangered !important;
+}
+
+input[type="text"] {
+  border-color: rgb(57, 57, 60) !important;
+}
+
+.bg-body-tertiary {
+  background: rgba(255, 252, 250, 0.95);
+  box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.25);
+}
