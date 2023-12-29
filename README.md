@@ -1,6 +1,6 @@
 # Agendamento: Projeto de agendamento de vistoria
 
-## Acesse: https://agendamentovistoria.netlify.app
+## Acesse: 
 
 
 ## 📖Descrição
