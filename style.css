@@ -3,6 +3,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif, "Montserrat";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 h2 {
